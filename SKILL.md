@@ -126,7 +126,10 @@ Every time you are asked to make a change follow:
 
 * Pin what the code does.
 * Change the structure.
-* Prove the behavior did not change.
+* Check that the behavior did not change.
+* When replacing an algorithm, compare its results with a simple, independent reference on the same inputs. If the domain is large, exhaust a small range that includes its edge cases.
+* Report the first mismatch: input, expected result, actual result. If all agree, say which inputs you checked.
+* For a speed claim, time both versions on the same representative workload after checking the results agree.
 
 # Practice
 
